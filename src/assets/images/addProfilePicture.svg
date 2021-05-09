@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="174" height="174" viewBox="0 0 174 174">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.733" y1="-1.018" x2="0.669" y2="0.708" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5252b6"/>
+      <stop offset="1" stop-color="#cb0367"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_24" data-name="Path 24" d="M118.259,365.333a87,87,0,1,1,87-87A87.1,87.1,0,0,1,118.259,365.333Zm0-166.933a79.933,79.933,0,1,0,79.934,79.933A80.024,80.024,0,0,0,118.259,198.4Z" transform="translate(-31.258 -191.333)" fill="url(#linear-gradient)"/>
+  <circle id="Ellipse_164" data-name="Ellipse 164" cx="22" cy="22" r="22" transform="translate(125.879 126)" fill="#fff"/>
+  <circle id="Ellipse_37" data-name="Ellipse 37" cx="25" cy="25" r="25" transform="translate(60.879 21)" fill="#c7c7c7"/>
+  <rect id="Rectangle_1599" data-name="Rectangle 1599" width="103" height="71" rx="18" transform="translate(33.879 71)" fill="#c7c7c7"/>
+  <path id="Icon_awesome-plus-circle" data-name="Icon awesome-plus-circle" d="M26.656.562A26.094,26.094,0,1,0,52.75,26.656,26.089,26.089,0,0,0,26.656.562ZM41.807,29.6a1.266,1.266,0,0,1-1.263,1.263h-9.68v9.68A1.266,1.266,0,0,1,29.6,41.807H23.71a1.266,1.266,0,0,1-1.263-1.263v-9.68h-9.68A1.266,1.266,0,0,1,11.505,29.6V23.71a1.266,1.266,0,0,1,1.263-1.263h9.68v-9.68a1.266,1.266,0,0,1,1.263-1.263H29.6a1.266,1.266,0,0,1,1.263,1.263v9.68h9.68a1.266,1.266,0,0,1,1.263,1.263Z" transform="translate(120.971 121)" fill="#722797"/>
+</svg>

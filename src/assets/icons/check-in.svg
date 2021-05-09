@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 49.109 49.107">
+    <path 
+        id="Icon_map-location-arrow" 
+        data-name="Icon map-location-arrow" 
+        d="M23.879,32.026l-5.2-14H1.773L34.282,1.581Z" 
+        transform="translate(4.227 9.174)"
+        fill="currentColor"
+    />
+    <path  
+        d="M55.813,240.44a24.554,24.554,0,1,1,24.554-24.554A24.582,
+        24.582,0,0,1,55.813,240.44Zm0-47.113a22.559,22.559,0,1,0,
+        22.56,22.559A22.585,22.585,0,0,0,55.813,193.328Z" 
+        transform="translate(-31.258 -191.333)" 
+        fill="currentColor"
+    />
+</svg>

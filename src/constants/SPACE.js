@@ -1,0 +1,9 @@
+const MARGIN_1 = 20
+const PADDING_1 = 15
+const HEADER_TO_CONTENT_SPACE = 30
+
+export {
+    MARGIN_1,
+    PADDING_1,
+    HEADER_TO_CONTENT_SPACE
+}

@@ -7,7 +7,7 @@ import {
 
 import ELayout from '../../components/ELayout'
 import { EText } from '../../components/EFont'
-import BottomTabNavBar from '../../components/BottomTabNavBar'
+import BottomTabNavBar from '../../components/footers/BottomTabNavBar'
 
 const HomeScreen = () => {
     return (

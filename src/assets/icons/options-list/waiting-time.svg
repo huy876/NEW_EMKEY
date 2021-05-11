@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53.012 53.01">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.733" y1="-1.018" x2="0.669" y2="0.708" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5252b6"/>
+      <stop offset="1" stop-color="#cb0367"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_2263" data-name="Path 2263" d="M57.764,244.343A26.505,26.505,0,1,1,84.27,217.838,26.536,26.536,0,0,1,57.764,244.343Zm0-50.857a24.352,24.352,0,1,0,24.353,24.352A24.38,24.38,0,0,0,57.764,193.486Z" transform="translate(-31.258 -191.333)" fill="url(#linear-gradient)"/>
+  <g id="Icon_ionic-ios-timer" data-name="Icon ionic-ios-timer" transform="translate(8.831 7.653)">
+    <path id="Path_101" data-name="Path 101" d="M21.906,41.227c-9.91,0-17.968-8.362-17.968-18.645a18.833,18.833,0,0,1,5.5-13.424,1.4,1.4,0,0,1,2.039.037,1.531,1.531,0,0,1-.036,2.116A15.832,15.832,0,0,0,6.83,22.582c0,8.623,6.765,15.643,15.075,15.643s15.075-7.02,15.075-15.643A15.46,15.46,0,0,0,23.343,7V12.84a1.447,1.447,0,1,1-2.893,0v-7.4a1.473,1.473,0,0,1,1.446-1.5c9.91,0,17.968,8.362,17.968,18.645S31.815,41.227,21.906,41.227Z" transform="translate(-3.938 -3.938)" fill="#cb0367"/>
+    <path id="Path_102" data-name="Path 102" d="M12.165,11.36l5.724,4.113a1.732,1.732,0,1,1-2.013,2.819,1.672,1.672,0,0,1-.4-.4L11.36,12.165a.577.577,0,0,1,.805-.805Z" transform="translate(-0.323 0.193)" fill="#cb0367"/>
+  </g>
+</svg>

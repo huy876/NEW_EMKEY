@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53.012 53.01">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.733" y1="-1.018" x2="0.669" y2="0.708" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5252b6"/>
+      <stop offset="1" stop-color="#cb0367"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_2661" data-name="Group 2661" transform="translate(-313.241 -445.799)">
+    <circle id="Oval" cx="4.846" cy="4.846" r="4.846" transform="translate(332.448 460.388)" fill="none" stroke="#cb0367" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/>
+    <path id="path" d="M314.227,524.957s-.3-5.39.911-6.369a31.555,31.555,0,0,0,6.534-7.51,38.886,38.886,0,0,0,1.665-11.6c.063-5.359-5.9-4.991-5.85,0s-1.41,9.231-3.261,10.958-3.96,3.246-11.365,3.064-10.686,3.021-10.594,11.456" transform="translate(32.339 -36.574)" fill="none" stroke="#cb0367" stroke-width="2"/>
+  </g>
+  <path id="Path_2262" data-name="Path 2262" d="M57.764,244.343A26.505,26.505,0,1,1,84.27,217.838,26.536,26.536,0,0,1,57.764,244.343Zm0-50.857a24.352,24.352,0,1,0,24.353,24.352A24.38,24.38,0,0,0,57.764,193.486Z" transform="translate(-31.258 -191.333)" fill="url(#linear-gradient)"/>
+</svg>

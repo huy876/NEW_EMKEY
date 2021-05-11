@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53.012 53.01">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.733" y1="-1.018" x2="0.669" y2="0.708" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5252b6"/>
+      <stop offset="1" stop-color="#cb0367"/>
+    </linearGradient>
+  </defs>
+  <g id="search-look-magnify-glass-inspect" transform="translate(8.979 9.423)">
+    <path id="Path_739" data-name="Path 739" d="M11.478,1A10.565,10.565,0,0,0,1,11.626,10.565,10.565,0,0,0,11.478,22.253,10.341,10.341,0,0,0,18.4,19.584l12.917,13.1.926-.939-12.917-13.1A10.641,10.641,0,0,0,11.478,1Zm0,19.924a9.3,9.3,0,0,1,0-18.6,9.3,9.3,0,0,1,0,18.6Z" fill="#cb0367" stroke="#cb0367" stroke-width="2"/>
+  </g>
+  <path id="Path_2270" data-name="Path 2270" d="M57.764,244.343A26.505,26.505,0,1,1,84.27,217.838,26.536,26.536,0,0,1,57.764,244.343Zm0-50.857a24.352,24.352,0,1,0,24.353,24.352A24.38,24.38,0,0,0,57.764,193.486Z" transform="translate(-31.258 -191.333)" fill="url(#linear-gradient)"/>
+</svg>

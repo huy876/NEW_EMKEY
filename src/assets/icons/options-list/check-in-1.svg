@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53.012 53.01">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.733" y1="-1.018" x2="0.669" y2="0.708" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5252b6"/>
+      <stop offset="1" stop-color="#cb0367"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_metro-location" data-name="Icon metro-location" d="M18.975,1.928A10.459,10.459,0,0,0,8.355,12.219c0,10.291,10.62,22.64,10.62,22.64s10.62-12.349,10.62-22.64A10.459,10.459,0,0,0,18.975,1.928Zm0,16.594a6.406,6.406,0,0,1-6.5-6.3,6.406,6.406,0,0,1,6.5-6.3,6.406,6.406,0,0,1,6.5,6.3A6.406,6.406,0,0,1,18.975,18.522Zm-4.115-6.3a4.117,4.117,0,0,1,8.23,0,4.117,4.117,0,0,1-8.23,0Z" transform="translate(6.998 8.234)" fill="#cb0367"/>
+  <path id="Path_2260" data-name="Path 2260" d="M57.764,244.343A26.505,26.505,0,1,1,84.27,217.838,26.536,26.536,0,0,1,57.764,244.343Zm0-50.857a24.352,24.352,0,1,0,24.353,24.352A24.38,24.38,0,0,0,57.764,193.486Z" transform="translate(-31.258 -191.333)" fill="url(#linear-gradient)"/>
+</svg>

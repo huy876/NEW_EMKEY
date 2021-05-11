@@ -1,9 +1,10 @@
-import React, { useState } from 'react' 
+import React, { useState, useRef } from 'react' 
 import {
     View,
     StyleSheet,
     TouchableOpacity,
-    Image
+    Image,
+    Animated
 } from 'react-native'
 import COLOR from '../../constants/COLOR'
 import { EText } from '../EFont'
@@ -13,12 +14,14 @@ import StaffIcon from '../../assets/icons/staff.svg'
 import ShareIcon from '../../assets/icons/share.svg'
 import PaymentIcon from '../../assets/icons/payment.svg'
 import ExpandIcon from '../../assets/icons/expand.svg'
+import BottomNavOptionsList from './BottomNavOptionsList'
 
-const ICON_SIZE = SCREEN_WIDTH/6 * 0.6
+export const ICON_SIZE = SCREEN_WIDTH/6 * 0.6
 
 const Tab = (props) => {
+
     return (
-        <TouchableOpacity style={styles.tab} onPress={props.onPress}>
+        <TouchableOpacity style={styles.tab} onPress={() => props.onPress(props.tabIndex)}>
             <props.Icon 
                 style={{
                     ...styles.icon, 
@@ -35,40 +38,88 @@ const Tab = (props) => {
 }
 
 const BottomTabNavBar = () => {
+    //Tab index: 1-Checkin, 2-Staff, 3-Share, 4-Payment
     const [activeTab, setActiveTab] = useState(1)
+
     //Nav State: 1-Basic, 2-Expand Min, 3-Expand Max
     const [navState, setNavState] = useState(1)
 
-    const handleCheckIn = () => {
-        setActiveTab(1)
-    }
-    const handleStaff = () => {
-        setActiveTab(2)
-    }
-    const handleShare = () => {
-        setActiveTab(3)
-    }
-    const handlePayment = () => {
-        setActiveTab(4)
+    const botNavTranslate = useRef(new Animated.Value(0)).current
+    const optionsListContTranslate = useRef(new Animated.Value(600)).current
+
+    console.log(`optionsListContTranslate`, optionsListContTranslate)
+    console.log(`botNavTramslate`, botNavTranslate)
+
+    const hideBotNav = () => {
+        Animated.sequence([
+            Animated.timing(botNavTranslate, {
+                toValue: 120,
+                duration: 500,
+                useNativeDriver: true
+            }),
+            Animated.timing(optionsListContTranslate, {
+                toValue: 0,
+                duration: 500,
+                useNativeDriver: true,
+                // delay: 500
+            })
+        ]).start()
     }
 
-    const renderState1 = () => {
-        return (
-            <>
+    const showBotNav = () => {
+        Animated.sequence([
+            Animated.timing(optionsListContTranslate, {
+                toValue: 550,
+                duration: 500,
+                useNativeDriver: true,
+                // delay: 500
+            }),
+            Animated.timing(botNavTranslate, {
+                toValue: 0,
+                duration: 500,
+                useNativeDriver: true
+            }),
+        ]).start()
+    }
+
+    const handlePressMainBtn = () => {
+        switch (navState) {
+            case 1: 
+                hideBotNav()
+                setNavState(2)
+                return
+            case 2: 
+                showBotNav()
+                setNavState(1)
+                return
+        }
+    }
+
+    const handlePressBotNavTab = (tabIndex) => {
+        setActiveTab(tabIndex)
+    }
+
+    return (
+        <>
+            <Animated.View pointerEvents="box-none" style={[styles.botTabNavCont, {
+                    transform: [
+                        {translateY: botNavTranslate}
+                    ]
+                }]}>
                 <View style={styles.bottomTabNav}>
                     <Tab
                         Icon={CheckInIcon} 
                         title="Check in"
                         activeTab={activeTab}
                         tabIndex={1}
-                        onPress={handleCheckIn}
+                        onPress={handlePressBotNavTab}
                     />
                     <Tab
                         Icon={StaffIcon} 
                         title="Staff"
                         activeTab={activeTab}
                         tabIndex={2}
-                        onPress={handleStaff}
+                        onPress={handlePressBotNavTab}
                     />
                     <View style={styles.mainTabSpace}>
 
@@ -78,51 +129,58 @@ const BottomTabNavBar = () => {
                         title="Share"
                         activeTab={activeTab}
                         tabIndex={3}
-                        onPress={handleShare}
+                        onPress={handlePressBotNavTab}
                     />
                     <Tab
                         Icon={PaymentIcon} 
                         title="Payment"
                         activeTab={activeTab}
                         tabIndex={4}
-                        onPress={handlePayment}
+                        onPress={handlePressBotNavTab}
                     />
 
                     
                 </View>
                 <View style={{...styles.mainTabBtn, zIndex: 10}}/>
-                <TouchableOpacity style={{...styles.mainTabBtn, zIndex: 20}} onPress={() => setNavState(2)}>
+                <TouchableOpacity style={{...styles.mainTabBtn, zIndex: 20}} onPress={handlePressMainBtn}>
                     <Image source={require('../../assets/images/emKey.png')} style={styles.mainTabBtnImg}/>
                     <TouchableOpacity style={styles.expandIconCont} >
                         <ExpandIcon style={styles.expandIcon}/>
                     </TouchableOpacity>
                 </TouchableOpacity>
-            </>
-        )
-    }
+            </Animated.View>
 
-    const renderState2 = () => {
-        return (
-            <>
-                <TouchableOpacity onPress={() => setNavState(1)}>
-                    <EText>AAAA</EText>
-                </TouchableOpacity>
-            </>
-        )
-    }
+            <Animated.View style={[styles.optionsListCont, {
+                transform: [
+                    {translateY: optionsListContTranslate}
+                ]
+            }]}>
+                <BottomNavOptionsList style={styles.optionList}/>
 
-    switch (navState) {
-        case 2: 
-            return renderState2()
-        default: 
-            return renderState1()
-    }
+                <View style={styles.hideOptionsListBtnCont} pointerEvents="box-none">
+                    <TouchableOpacity onPress={handlePressMainBtn}>
+                    <ExpandIcon style={styles.expandIcon}/>
+                    </TouchableOpacity>
+                </View>
+            </Animated.View>
+        </>
+    )
 }
 
 const styles = StyleSheet.create({
     container: {
         flex: 1, 
         borderWidth: 1,
+    },
+    botTabNavCont: {
+        flex: 1,
+        zIndex: 40,
+        position: 'absolute',
+        bottom: 0,
+        //set width and height to prevent click TouchAbleOpacity 
+        //outsite the container when position absolute
+        height: 150,
+        width:500
     },
     bottomTabNav: {
         borderWidth: 2,
@@ -134,7 +192,7 @@ const styles = StyleSheet.create({
         position: 'absolute',
         bottom: 0,
         flexDirection: 'row',
-        zIndex: 20,
+        zIndex: 10,
     },
     mainTabSpace: {
         flexGrow: 2,
@@ -190,6 +248,15 @@ const styles = StyleSheet.create({
     },
     expandIcon: {
         
+    },
+    optionsListCont: {
+        flex: 1
+    },
+    hideOptionsListBtnCont: {
+        width: SCREEN_WIDTH,
+        alignItems: 'center',
+        position: 'absolute',
+        bottom: 480
     }
 })
 

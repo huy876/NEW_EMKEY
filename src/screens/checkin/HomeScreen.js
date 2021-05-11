@@ -2,7 +2,9 @@ import React from 'react'
 import {
     View,
     Text,
-    StyleSheet
+    StyleSheet,
+    TouchableOpacity,
+    Animated
 } from 'react-native'
 
 import ELayout from '../../components/ELayout'

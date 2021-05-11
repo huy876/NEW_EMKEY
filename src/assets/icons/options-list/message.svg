@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53.012 53.01">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.733" y1="-1.018" x2="0.669" y2="0.708" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5252b6"/>
+      <stop offset="1" stop-color="#cb0367"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_material-message" data-name="Icon material-message" d="M27.751,3h-22A2.735,2.735,0,0,0,3.014,5.727L3,30.267l5.5-5.453H27.751a2.747,2.747,0,0,0,2.75-2.727V5.727A2.747,2.747,0,0,0,27.751,3ZM25,19.36H8.5V16.634H25Zm0-4.09H8.5V12.543H25Zm0-4.09H8.5V8.453H25Z" transform="translate(10.257 11.572)" fill="#cb0367"/>
+  <path id="Path_2266" data-name="Path 2266" d="M57.764,244.343A26.505,26.505,0,1,1,84.27,217.838,26.536,26.536,0,0,1,57.764,244.343Zm0-50.857a24.352,24.352,0,1,0,24.353,24.352A24.38,24.38,0,0,0,57.764,193.486Z" transform="translate(-31.258 -191.333)" fill="url(#linear-gradient)"/>
+</svg>

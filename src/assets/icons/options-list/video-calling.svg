@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 53.012 53.01">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.733" y1="-1.018" x2="0.669" y2="0.708" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#5252b6"/>
+      <stop offset="1" stop-color="#cb0367"/>
+    </linearGradient>
+  </defs>
+  <path id="Icon_awesome-video" data-name="Icon awesome-video" d="M19.371,4.5H2.754A2.674,2.674,0,0,0,0,7.085v15.6a2.674,2.674,0,0,0,2.754,2.585H19.371a2.674,2.674,0,0,0,2.754-2.585V7.085A2.674,2.674,0,0,0,19.371,4.5ZM30.284,6.539l-6.315,4.089v8.513l6.315,4.084a1.858,1.858,0,0,0,2.9-1.4V7.934A1.858,1.858,0,0,0,30.284,6.539Z" transform="translate(10.812 10.109)" fill="#cb0367"/>
+  <path id="Path_2264" data-name="Path 2264" d="M57.764,244.343A26.505,26.505,0,1,1,84.27,217.838,26.536,26.536,0,0,1,57.764,244.343Zm0-50.857a24.352,24.352,0,1,0,24.353,24.352A24.38,24.38,0,0,0,57.764,193.486Z" transform="translate(-31.258 -191.333)" fill="url(#linear-gradient)"/>
+</svg>

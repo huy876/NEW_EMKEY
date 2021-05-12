@@ -13,8 +13,9 @@ import BottomTabNavBar from '../../components/footers/BottomTabNavBar'
 
 import MapView from 'react-native-maps'
 import { SCREEN_HEIGHT, SCREEN_WIDTH } from '../../components/EUtils'
+import SideNavButton from '../../components/sides/SideNavButton'
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}) => {
     return (
         <ELayout style={styles.screen}>
             <MapView
@@ -31,6 +32,7 @@ const HomeScreen = () => {
                     zIndex: 0
                 }}
             />
+            <SideNavButton navigation={navigation}/>
             <BottomTabNavBar />
             
         </ELayout>

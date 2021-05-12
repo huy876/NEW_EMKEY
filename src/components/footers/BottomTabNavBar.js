@@ -47,9 +47,6 @@ const BottomTabNavBar = () => {
     const botNavTranslate = useRef(new Animated.Value(0)).current
     const optionsListContTranslate = useRef(new Animated.Value(600)).current
 
-    console.log(`optionsListContTranslate`, optionsListContTranslate)
-    console.log(`botNavTramslate`, botNavTranslate)
-
     const hideBotNav = () => {
         Animated.sequence([
             Animated.timing(botNavTranslate, {

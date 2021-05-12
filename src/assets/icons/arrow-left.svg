@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 29">
+    <path 
+        id="Icon_ionic-ios-arrow-back" 
+        data-name="Icon ionic-ios-arrow-back" 
+        d="M16.677,20.69,28.59,9.726a1.951,1.951,0,0,0,0-2.927,2.4,2.4,0,0,0-3.187,
+        0l-13.5,12.423a1.952,1.952,0,0,0-.066,2.858L25.394,34.589a2.4,2.4,0,0,0,
+        3.187,0,1.951,1.951,0,0,0,0-2.927Z" 
+        transform="translate(-11.251 -6.194)" 
+        fill="currentColor"/>
+</svg>

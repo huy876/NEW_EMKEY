@@ -21,15 +21,15 @@ const BottomNavOption = (props) => {
 
 const styles = StyleSheet.create({
     cont: {
-        width: (SCREEN_WIDTH - 4) / 3 - 1 ,
+        width: 120 ,
         alignItems: 'center',
         justifyContent: 'center',
-        height: ICON_SIZE * 1.1 + 30,
+        height: 52,
         marginTop: 10,
     },
     icon: {
-        width: ICON_SIZE * 1.1,
-        height: ICON_SIZE * 1.1
+        width: 52,
+        height: 52
     }
 })
 export default BottomNavOption

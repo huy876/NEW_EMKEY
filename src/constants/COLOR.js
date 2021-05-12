@@ -5,6 +5,7 @@ export default {
     purple1: '#722797',
 
     pink1: '#BC1768',
+    pink2: '#CB0268',
 
     black: "#000000",
     black1: '#2B2B2B',

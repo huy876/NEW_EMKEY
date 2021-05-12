@@ -101,7 +101,8 @@ const styles = StyleSheet.create({
         width: SCREEN_WIDTH - 3,
         marginBottom: MARGIN_1,
         height: 400,
-        alignContent: 'space-around'
+        alignContent: 'space-around',
+        justifyContent: 'space-between'
     }
 })
 

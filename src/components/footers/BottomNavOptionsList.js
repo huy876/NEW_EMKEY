@@ -90,8 +90,10 @@ const styles = StyleSheet.create({
         height: 500,
         borderWidth: 2,
         position: 'absolute',
+        zIndex: 18,
         bottom: 0,
         borderColor: COLOR.pink1,
+        backgroundColor: COLOR.white
     },
     wraper: {
         flexDirection: 'row',

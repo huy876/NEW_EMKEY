@@ -21,7 +21,7 @@ const BottomNavOption = (props) => {
 
 const styles = StyleSheet.create({
     cont: {
-        width: (SCREEN_WIDTH - 4) / 3 ,
+        width: (SCREEN_WIDTH - 4) / 3 - 1 ,
         alignItems: 'center',
         justifyContent: 'center',
         height: ICON_SIZE * 1.1 + 30,

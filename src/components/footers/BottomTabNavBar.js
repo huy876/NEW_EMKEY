@@ -193,6 +193,7 @@ const styles = StyleSheet.create({
         bottom: 0,
         flexDirection: 'row',
         zIndex: 10,
+        backgroundColor: COLOR.white
     },
     mainTabSpace: {
         flexGrow: 2,
@@ -256,7 +257,8 @@ const styles = StyleSheet.create({
         width: SCREEN_WIDTH,
         alignItems: 'center',
         position: 'absolute',
-        bottom: 480
+        bottom: 480,
+        zIndex: 19
     }
 })
 

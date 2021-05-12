@@ -11,11 +11,13 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		44049719D2094B988D2A92A2 /* Segoe-UI-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A12EC6597DDF48D8AF2774F6 /* Segoe-UI-Bold-Italic.ttf */; };
-		41A027B63CD442B5ABE72C59 /* Segoe-UI-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE42A1E36330430D9A4977E7 /* Segoe-UI-Bold.ttf */; };
 		2CD1F483208C4E10B8EC665C /* Segoe-UI-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEC94B6FB845467FBFECC035 /* Segoe-UI-Italic.ttf */; };
+		41A027B63CD442B5ABE72C59 /* Segoe-UI-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AE42A1E36330430D9A4977E7 /* Segoe-UI-Bold.ttf */; };
+		44049719D2094B988D2A92A2 /* Segoe-UI-Bold-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A12EC6597DDF48D8AF2774F6 /* Segoe-UI-Bold-Italic.ttf */; };
 		49D1D04245E04DF0973E8B3A /* Segoe-UI-Semi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 809ABCA533984F69B3D49D1B /* Segoe-UI-Semi-Bold.ttf */; };
+		79D791235CEFD0B2B17550F5 /* libPods-NEW_EMKEY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E3F1550BF4F14BC4571479C1 /* libPods-NEW_EMKEY.a */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9A72DADA89420BA69912016A /* libPods-NEW_EMKEY-NEW_EMKEYTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F7B643E2926070461394B0 /* libPods-NEW_EMKEY-NEW_EMKEYTests.a */; };
 		D9C3C11CF76B48639850EFC4 /* Segoe-UI.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 922DA9C078C0452394C37F76 /* Segoe-UI.ttf */; };
 /* End PBXBuildFile section */
 
@@ -39,13 +41,19 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = NEW_EMKEY/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = NEW_EMKEY/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = NEW_EMKEY/main.m; sourceTree = "<group>"; };
+		308182058665EA3C992ABDDB /* Pods-NEW_EMKEY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEW_EMKEY.debug.xcconfig"; path = "Target Support Files/Pods-NEW_EMKEY/Pods-NEW_EMKEY.debug.xcconfig"; sourceTree = "<group>"; };
+		5AE68E431F90FD1FBC236EB3 /* Pods-NEW_EMKEY-NEW_EMKEYTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEW_EMKEY-NEW_EMKEYTests.debug.xcconfig"; path = "Target Support Files/Pods-NEW_EMKEY-NEW_EMKEYTests/Pods-NEW_EMKEY-NEW_EMKEYTests.debug.xcconfig"; sourceTree = "<group>"; };
+		66D80D52E70B60BE0EF63841 /* Pods-NEW_EMKEY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEW_EMKEY.release.xcconfig"; path = "Target Support Files/Pods-NEW_EMKEY/Pods-NEW_EMKEY.release.xcconfig"; sourceTree = "<group>"; };
+		809ABCA533984F69B3D49D1B /* Segoe-UI-Semi-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Segoe-UI-Semi-Bold.ttf"; path = "../src/assets/fonts/Segoe-UI-Semi-Bold.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = NEW_EMKEY/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8FB0D652B0A00E98324FD599 /* Pods-NEW_EMKEY-NEW_EMKEYTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NEW_EMKEY-NEW_EMKEYTests.release.xcconfig"; path = "Target Support Files/Pods-NEW_EMKEY-NEW_EMKEYTests/Pods-NEW_EMKEY-NEW_EMKEYTests.release.xcconfig"; sourceTree = "<group>"; };
+		922DA9C078C0452394C37F76 /* Segoe-UI.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Segoe-UI.ttf"; path = "../src/assets/fonts/Segoe-UI.ttf"; sourceTree = "<group>"; };
+		99F7B643E2926070461394B0 /* libPods-NEW_EMKEY-NEW_EMKEYTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NEW_EMKEY-NEW_EMKEYTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A12EC6597DDF48D8AF2774F6 /* Segoe-UI-Bold-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Segoe-UI-Bold-Italic.ttf"; path = "../src/assets/fonts/Segoe-UI-Bold-Italic.ttf"; sourceTree = "<group>"; };
+		AE42A1E36330430D9A4977E7 /* Segoe-UI-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Segoe-UI-Bold.ttf"; path = "../src/assets/fonts/Segoe-UI-Bold.ttf"; sourceTree = "<group>"; };
+		BEC94B6FB845467FBFECC035 /* Segoe-UI-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Segoe-UI-Italic.ttf"; path = "../src/assets/fonts/Segoe-UI-Italic.ttf"; sourceTree = "<group>"; };
+		E3F1550BF4F14BC4571479C1 /* libPods-NEW_EMKEY.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NEW_EMKEY.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		A12EC6597DDF48D8AF2774F6 /* Segoe-UI-Bold-Italic.ttf */ = {isa = PBXFileReference; name = "Segoe-UI-Bold-Italic.ttf"; path = "../src/assets/fonts/Segoe-UI-Bold-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AE42A1E36330430D9A4977E7 /* Segoe-UI-Bold.ttf */ = {isa = PBXFileReference; name = "Segoe-UI-Bold.ttf"; path = "../src/assets/fonts/Segoe-UI-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BEC94B6FB845467FBFECC035 /* Segoe-UI-Italic.ttf */ = {isa = PBXFileReference; name = "Segoe-UI-Italic.ttf"; path = "../src/assets/fonts/Segoe-UI-Italic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		809ABCA533984F69B3D49D1B /* Segoe-UI-Semi-Bold.ttf */ = {isa = PBXFileReference; name = "Segoe-UI-Semi-Bold.ttf"; path = "../src/assets/fonts/Segoe-UI-Semi-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		922DA9C078C0452394C37F76 /* Segoe-UI.ttf */ = {isa = PBXFileReference; name = "Segoe-UI.ttf"; path = "../src/assets/fonts/Segoe-UI.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A72DADA89420BA69912016A /* libPods-NEW_EMKEY-NEW_EMKEYTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D791235CEFD0B2B17550F5 /* libPods-NEW_EMKEY.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,8 +110,22 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				E3F1550BF4F14BC4571479C1 /* libPods-NEW_EMKEY.a */,
+				99F7B643E2926070461394B0 /* libPods-NEW_EMKEY-NEW_EMKEYTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4BA20593E327817B6AB3FB63 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				308182058665EA3C992ABDDB /* Pods-NEW_EMKEY.debug.xcconfig */,
+				66D80D52E70B60BE0EF63841 /* Pods-NEW_EMKEY.release.xcconfig */,
+				5AE68E431F90FD1FBC236EB3 /* Pods-NEW_EMKEY-NEW_EMKEYTests.debug.xcconfig */,
+				8FB0D652B0A00E98324FD599 /* Pods-NEW_EMKEY-NEW_EMKEYTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -120,6 +144,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				C4F010405AEB4A8AAD63F182 /* Resources */,
+				4BA20593E327817B6AB3FB63 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -136,7 +161,7 @@
 			sourceTree = "<group>";
 		};
 		C4F010405AEB4A8AAD63F182 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				A12EC6597DDF48D8AF2774F6 /* Segoe-UI-Bold-Italic.ttf */,
 				AE42A1E36330430D9A4977E7 /* Segoe-UI-Bold.ttf */,
@@ -145,8 +170,8 @@
 				922DA9C078C0452394C37F76 /* Segoe-UI.ttf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -155,9 +180,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "NEW_EMKEYTests" */;
 			buildPhases = (
+				8BAF6575D3E0D6866071B01C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				66D1F5828153DA579C6EE80D /* [CP] Embed Pods Frameworks */,
+				18224A627C3F1F75D9905FD1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,11 +201,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "NEW_EMKEY" */;
 			buildPhases = (
+				0E3B6473BF060822CF22873C /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				1053DDDF796B0F9FE431E841 /* [CP] Embed Pods Frameworks */,
+				B395F34112076566DB2AB778 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,6 +294,118 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
+		0E3B6473BF060822CF22873C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NEW_EMKEY-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1053DDDF796B0F9FE431E841 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY/Pods-NEW_EMKEY-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY/Pods-NEW_EMKEY-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY/Pods-NEW_EMKEY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		18224A627C3F1F75D9905FD1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY-NEW_EMKEYTests/Pods-NEW_EMKEY-NEW_EMKEYTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY-NEW_EMKEYTests/Pods-NEW_EMKEY-NEW_EMKEYTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY-NEW_EMKEYTests/Pods-NEW_EMKEY-NEW_EMKEYTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		66D1F5828153DA579C6EE80D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY-NEW_EMKEYTests/Pods-NEW_EMKEY-NEW_EMKEYTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY-NEW_EMKEYTests/Pods-NEW_EMKEY-NEW_EMKEYTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY-NEW_EMKEYTests/Pods-NEW_EMKEY-NEW_EMKEYTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BAF6575D3E0D6866071B01C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NEW_EMKEY-NEW_EMKEYTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B395F34112076566DB2AB778 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY/Pods-NEW_EMKEY-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY/Pods-NEW_EMKEY-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NEW_EMKEY/Pods-NEW_EMKEY-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -315,6 +458,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE68E431F90FD1FBC236EB3 /* Pods-NEW_EMKEY-NEW_EMKEYTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -341,6 +485,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8FB0D652B0A00E98324FD599 /* Pods-NEW_EMKEY-NEW_EMKEYTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -364,6 +509,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 308182058665EA3C992ABDDB /* Pods-NEW_EMKEY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -389,6 +535,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66D80D52E70B60BE0EF63841 /* Pods-NEW_EMKEY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -443,6 +590,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -507,6 +655,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

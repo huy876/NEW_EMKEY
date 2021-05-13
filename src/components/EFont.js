@@ -1,6 +1,7 @@
 import React from 'react'
 import { Text, StyleSheet } from 'react-native'
 import COLORS from '../constants/COLOR'
+import FONT from '../constants/FONT'
 
 export const EText = (props) => (
     <Text {...props} style={{...styles.text, ...props.style}}>
@@ -22,18 +23,18 @@ export const ScreenTitleText = (props) => (
 
 const styles = StyleSheet.create({
     text: {
-        fontFamily: 'Segoe-UI',
+        fontFamily: FONT.Segoe_UI,
         fontSize: 15,
         color: COLORS.black,
         fontWeight: 'normal'
     },
     h1: {
-        fontFamily: 'Segoe-UI-Bold',
+        fontFamily: FONT.Segoe_UI_Bold,
         fontSize: 30,
         color: COLORS.black,
     },
     screenTitle: {
-        fontFamily: 'Segoe-UI',
+        fontFamily: FONT.Segoe_UI,
         fontSize: 22,
         color: COLORS.black,
         fontWeight: 'bold'  

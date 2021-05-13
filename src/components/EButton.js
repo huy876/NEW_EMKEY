@@ -9,6 +9,7 @@ import { EText } from './EFont'
 import LinearGradient from 'react-native-linear-gradient'
 import COLOR from '../constants/COLOR'
 import ArrowCircleRight from  '../assets/icons/arrow-circle-right.svg'
+import FONT from '../constants/FONT'
 
 export const GradientButton = (props) => {
     
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     gradientButtonText: {
-        fontFamily: 'Segoe-UI-Bold',
+        fontFamily: FONT.Segoe_UI_Bold,
         color: COLOR.white,
         fontSize: 22,
     },

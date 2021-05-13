@@ -18,6 +18,7 @@ import { GradientButton } from '../../../components/EButton'
 import countries from '../../../assets/data/countries'
 import RatioSelection from '../../../components/form_elements/RatioSelection'
 import PlusCircleIcon from '../../../assets/icons/plus-circle.svg'
+import FONT from '../../../constants/FONT'
 
 const AccountVerificationScreen = ({navigation}) => {
     const [country, setCountry] = useState('New Zealand')
@@ -97,7 +98,7 @@ const styles = StyleSheet.create({
     },
     topicText: {
         fontSize: 22, 
-        fontFamily: 'Segoe-UI-Semi-Bold',
+        fontFamily: FONT.Segoe_UI_Semi_Bold,
         color: COLOR.black2,
         marginBottom: MARGIN_1
     },

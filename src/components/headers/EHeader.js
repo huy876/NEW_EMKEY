@@ -10,6 +10,7 @@ import { PADDING_1 } from '../../constants/SPACE'
 import { EText } from '../EFont'
 import { SCREEN_WIDTH } from '../EUtils'
 import { useNavigation } from '@react-navigation/native'
+import FONT from '../../constants/FONT'
 
 const EHeader = props => {
     let navigation = useNavigation()
@@ -57,7 +58,7 @@ const styleSheetFactory = props => StyleSheet.create({
     },
     screenTitle: {
         fontSize: 22,
-        fontFamily: 'Segoe-UI-Semi-Bold'
+        fontFamily: FONT.Segoe_UI_Semi_Bold
     }
 
 })

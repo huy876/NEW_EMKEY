@@ -10,6 +10,7 @@ import { EText } from '../EFont'
 import COLOR from '../../constants/COLOR'
 import { SCREEN_WIDTH } from '../EUtils'
 import { set } from 'react-native-reanimated'
+import FONT from '../../constants/FONT'
 
 const EInput = props => {
     const [outLine, setOutLine] = useState(COLOR.grey1)
@@ -41,7 +42,7 @@ const styles = StyleSheet.create({
         marginBottom: 18,
         paddingHorizontal: 15,
         fontSize: 15,
-        fontFamily: 'Segoe-UI'
+        fontFamily: FONT.Segoe_UI
     }
 })
 

@@ -14,6 +14,7 @@ import { EText } from '../../../components/EFont'
 import { GradientButton } from '../../../components/EButton'
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import { HEADER_TO_CONTENT_SPACE } from '../../../constants/SPACE'
+import FONT from '../../../constants/FONT'
 
 const UploadYourPictureScreen = ({navigation}) => {
     const [profilePictureSrc, setProfilePicturePath] = useState(null)
@@ -80,7 +81,7 @@ const styles = StyleSheet.create({
         borderRadius: 200
     },
     text: {
-        fontFamily: 'Segoe-UI-Semi-Bold',
+        fontFamily: FONT.Segoe_UI_Semi_Bold,
         marginTop: 20,
         fontSize: 18
     },

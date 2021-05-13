@@ -70,6 +70,7 @@ const styles = StyleSheet.create({
         fontFamily: FONT.Segoe_UI_Bold,
         color: COLOR.white,
         fontSize: 22,
+        fontWeight: 'bold'
     },
     outLineButton: {
         width: 200,

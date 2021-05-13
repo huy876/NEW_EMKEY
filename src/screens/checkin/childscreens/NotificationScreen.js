@@ -7,11 +7,21 @@ import {
 
 import ELayout from '../../../components/ELayout'
 import { EText } from '../../../components/EFont'
+import EHeader from '../../../components/headers/EHeader'
+import dummyNoti from '../../../assets/dummy/businessNoti'
+import NotificationList from '../components/NotificationList'
 
-const NotificationScreen = () => {
+const NotificationScreen = ({navigation}) => {
     return (
         <ELayout style={styles.screen}>
-            <EText>NotificationScreen</EText>
+            <EHeader 
+                screenTitle="Notification"
+                devider={true}
+                isBackButton={true}
+            />
+            <NotificationList 
+                notis={dummyNoti}
+            />
         </ELayout>
     )
 }

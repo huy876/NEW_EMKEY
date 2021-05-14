@@ -23,6 +23,10 @@ import StockIcon from '../../assets/icons/options-list/search-stock.svg'
 import FeedBackIcon from '../../assets/icons/options-list/feedback.svg'
 
 const BottomNavOptionsList = (props) => {
+    const handleQueeing = () => {
+        props.setQueueingState(1)
+    }
+
     return (
         <View style={{...styles.container, ...props.style}}>
             <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
@@ -40,6 +44,7 @@ const BottomNavOptionsList = (props) => {
                 <BottomNavOption 
                     Icon={QueueingIcon}
                     title="Queueing"
+                    onPress={handleQueeing}
                 />
                 <BottomNavOption 
                     Icon={WaitingTimeIcon}

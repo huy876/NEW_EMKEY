@@ -1,7 +1,8 @@
 import React from 'react' 
 import {
     View,
-    StyleSheet
+    StyleSheet,
+    TouchableOpacity
 } from 'react-native'
 import COLOR from '../../constants/COLOR'
 import { EText } from '../EFont'
@@ -10,12 +11,12 @@ import { ICON_SIZE } from './BottomTabNavBar'
 
 const BottomNavOption = (props) => {
     return (
-        <View style={styles.cont}>
+        <TouchableOpacity style={styles.cont} onPress={() => props.onPress()}>
             <props.Icon 
                 style={styles.icon} 
             />
             <EText>{props.title}</EText>
-        </View>
+        </TouchableOpacity>
     )
 }
 

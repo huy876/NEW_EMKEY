@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     View,
     Text,
@@ -14,8 +14,16 @@ import BottomTabNavBar from '../../components/footers/BottomTabNavBar'
 import MapView from 'react-native-maps'
 import { SCREEN_HEIGHT, SCREEN_WIDTH } from '../../components/EUtils'
 import SideNavButton from '../../components/sides/SideNavButton'
+import StandQueuePopup from './components/StandQueuePopup'
 
 const HomeScreen = ({navigation}) => {
+    //0-no queueing, 1-ask for queueing, 2- queueing
+    const [queueingState, setQueueingState] = useState(0)
+
+    const renderQueueing = () => {
+        return queueingState === 1 && <StandQueuePopup />
+    }
+
     return (
         <ELayout style={styles.screen}>
             <MapView
@@ -32,8 +40,9 @@ const HomeScreen = ({navigation}) => {
                     zIndex: 0
                 }}
             />
+            {renderQueueing()}
             <SideNavButton navigation={navigation}/>
-            <BottomTabNavBar />
+            <BottomTabNavBar setQueueingState={setQueueingState}/>
             
         </ELayout>
     )

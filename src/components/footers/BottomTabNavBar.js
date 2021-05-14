@@ -38,7 +38,7 @@ const Tab = (props) => {
     )
 }
 
-const BottomTabNavBar = () => {
+const BottomTabNavBar = (props) => {
     //Tab index: 1-Checkin, 2-Staff, 3-Share, 4-Payment
     const [activeTab, setActiveTab] = useState(1)
 
@@ -153,7 +153,7 @@ const BottomTabNavBar = () => {
                     {translateY: optionsListContTranslate}
                 ]
             }]}>
-                <BottomNavOptionsList style={styles.optionList}/>
+                <BottomNavOptionsList style={styles.optionList} setQueueingState={props.setQueueingState}/>
 
                 <View style={styles.hideOptionsListBtnCont} pointerEvents="box-none">
                     <TouchableOpacity onPress={handlePressMainBtn}>

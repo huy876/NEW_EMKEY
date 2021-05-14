@@ -8,7 +8,7 @@ import {
 } from 'react-native'
 import COLOR from '../../constants/COLOR'
 import { EText } from '../EFont'
-import { SCREEN_WIDTH, SCREEN_HEIGHT } from '../EUtils'
+import { SCREEN_WIDTH, SCREEN_HEIGHT, OS } from '../EUtils'
 import CheckInIcon from '../../assets/icons/check-in.svg'
 import StaffIcon from '../../assets/icons/staff.svg'
 import ShareIcon from '../../assets/icons/share.svg'
@@ -17,6 +17,7 @@ import ExpandIcon from '../../assets/icons/expand.svg'
 import BottomNavOptionsList from './BottomNavOptionsList'
 
 export const ICON_SIZE = SCREEN_WIDTH/6 * 0.6
+const OS_POS_CONFIG = OS === 'ios' ? 20 : 0
 
 const Tab = (props) => {
 
@@ -44,18 +45,18 @@ const BottomTabNavBar = () => {
     //Nav State: 1-Basic, 2-Expand Min, 3-Expand Max
     const [navState, setNavState] = useState(1)
 
-    const botNavTranslate = useRef(new Animated.Value(0)).current
-    const optionsListContTranslate = useRef(new Animated.Value(600)).current
+    const botNavTranslate = useRef(new Animated.Value(0 + OS_POS_CONFIG)).current
+    const optionsListContTranslate = useRef(new Animated.Value(600 + OS_POS_CONFIG)).current
 
     const hideBotNav = () => {
         Animated.sequence([
             Animated.timing(botNavTranslate, {
-                toValue: 120,
+                toValue: 120 + OS_POS_CONFIG,
                 duration: 500,
                 useNativeDriver: true
             }),
             Animated.timing(optionsListContTranslate, {
-                toValue: 0,
+                toValue: 0 + OS_POS_CONFIG,
                 duration: 500,
                 useNativeDriver: true,
                 // delay: 500
@@ -66,13 +67,13 @@ const BottomTabNavBar = () => {
     const showBotNav = () => {
         Animated.sequence([
             Animated.timing(optionsListContTranslate, {
-                toValue: 550,
+                toValue: 550 + OS_POS_CONFIG,
                 duration: 500,
                 useNativeDriver: true,
                 // delay: 500
             }),
             Animated.timing(botNavTranslate, {
-                toValue: 0,
+                toValue: 0 + OS_POS_CONFIG,
                 duration: 500,
                 useNativeDriver: true
             }),
@@ -190,7 +191,8 @@ const styles = StyleSheet.create({
         bottom: 0,
         flexDirection: 'row',
         zIndex: 10,
-        backgroundColor: COLOR.white
+        backgroundColor: COLOR.white,
+        borderBottomWidth: 0
     },
     mainTabSpace: {
         flexGrow: 2,

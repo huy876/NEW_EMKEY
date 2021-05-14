@@ -46,6 +46,7 @@ const AccountVerificationScreen = ({navigation}) => {
                 screenTitle="Account Verification"
                 devider={true}
                 isBackButton={true}
+                style={{position: 'relative', left: - PADDING_1}}
             />
             <View style={styles.selectCountryCont}>
                 <EText style={styles.topicText}>Select country</EText>

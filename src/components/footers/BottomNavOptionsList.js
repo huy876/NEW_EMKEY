@@ -93,7 +93,8 @@ const styles = StyleSheet.create({
         zIndex: 18,
         bottom: 0,
         borderColor: COLOR.pink1,
-        backgroundColor: COLOR.white
+        backgroundColor: COLOR.white,
+        borderBottomWidth: 0
     },
     wraper: {
         flexDirection: 'row',

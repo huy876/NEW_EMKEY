@@ -2,13 +2,14 @@ import React, { useEffect } from 'react'
 import {
     View,
     StyleSheet,
-    TouchableOpacity
+    TouchableOpacity,
+    Platform
 } from 'react-native'
 import ArrowBackIcon from '../../assets/icons/arrow-back.svg'
 import COLOR from '../../constants/COLOR'
 import { PADDING_1 } from '../../constants/SPACE'
 import { EText } from '../EFont'
-import { SCREEN_WIDTH } from '../EUtils'
+import { OS, SCREEN_WIDTH } from '../EUtils'
 import { useNavigation } from '@react-navigation/native'
 import FONT from '../../constants/FONT'
 
@@ -21,7 +22,7 @@ const EHeader = props => {
     }
 
     return (
-        <View style={styles.headerCont}>
+        <View style={{...styles.headerCont, ...props.style}}>
             <TouchableOpacity style={styles.backButtonCont} onPress={navigation && handleGoback}>
                 {props.isBackButton && <ArrowBackIcon style={{width: 20, height: 20}}/>}
             </TouchableOpacity>
@@ -33,7 +34,7 @@ const EHeader = props => {
     )
 }
 
-export const HEADER_HEIGHT = 60
+export const HEADER_HEIGHT = OS === 'android' ? 60 : 40
 
 const styleSheetFactory = props => StyleSheet.create({
     headerCont: {
@@ -47,18 +48,21 @@ const styleSheetFactory = props => StyleSheet.create({
         height: HEADER_HEIGHT,
         position: 'absolute',
         paddingHorizontal: PADDING_1,
-        justifyContent: 'center'
+        justifyContent: 'center',
+        zIndex: 10,
+        backgroundColor: 'transparent'
     },
     screenTitleCont: {
         width: SCREEN_WIDTH,
         height: HEADER_HEIGHT,
         position: 'absolute',
         alignItems: 'center',
-        justifyContent: 'center'
+        justifyContent: 'center',
     },
     screenTitle: {
-        fontSize: 22,
-        fontFamily: FONT.Segoe_UI_Semi_Bold
+        fontSize: OS === 'android' ? 22 : 20,
+        fontFamily: FONT.Segoe_UI_Semi_Bold,
+        fontWeight: OS === 'ios' && '600'
     }
 
 })

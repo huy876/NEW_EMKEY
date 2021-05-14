@@ -26,8 +26,8 @@ const HomeScreen = ({navigation}) => {
                 longitudeDelta: 0.0421,
                 }}
                 style={{
-                    width: SCREEN_WIDTH,
-                    height: SCREEN_HEIGHT,
+                    width: '100%',
+                    height: '100%',
                     position: 'absolute',
                     zIndex: 0
                 }}

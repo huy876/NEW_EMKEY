@@ -14,7 +14,8 @@ import EmKeyImage from '../../assets/images/emKey.svg'
 import { GradientButton, TextButton } from '../../components/EButton'
 import EInput from '../../components/form_elements/EInput'
 import COLOR from '../../constants/COLOR'
-import { SCREEN_WIDTH } from '../../components/EUtils'
+import { OS, SCREEN_WIDTH } from '../../components/EUtils'
+import { HEADER_TO_CONTENT_SPACE } from '../../constants/SPACE'
 
 const LoginScreen = ({navigation}) => {
     const handleLogin = () => {
@@ -75,7 +76,7 @@ const styles = StyleSheet.create({
     },
     screenImageCont: {
         height: 200,
-        marginTop: 30,
+        marginTop: OS === 'android' ? HEADER_TO_CONTENT_SPACE : 0,
         justifyContent: 'flex-end',
         alignItems: 'center'
     },

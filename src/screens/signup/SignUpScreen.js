@@ -12,9 +12,10 @@ import { EText, H1 } from '../../components/EFont'
 import EmKeyImage from '../../assets/images/emKey.svg'
 import { GradientButton, TextButton } from '../../components/EButton'
 import EInput from '../../components/form_elements/EInput'
-import { SCREEN_WIDTH } from '../../components/EUtils'
+import { OS, SCREEN_WIDTH } from '../../components/EUtils'
 import ECheckBox from '../../components/form_elements/ECheckBox'
 import COLOR from '../../constants/COLOR'
+import { HEADER_TO_CONTENT_SPACE } from '../../constants/SPACE'
 
 const SignUpScreen = ({navigation}) => {
     const [isSelectPath, setIsSelectPath] = useState(true)
@@ -132,9 +133,9 @@ const styles = StyleSheet.create({
     },
     screenImageCont: {
         height: 200,
-        marginTop: 30,
+        marginTop: OS === 'android' ? HEADER_TO_CONTENT_SPACE : 0,
         justifyContent: 'flex-end',
-        alignItems: 'center'
+        alignItems: 'center',
     },
     title: {
         marginBottom: 20

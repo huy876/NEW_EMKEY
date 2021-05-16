@@ -15,6 +15,8 @@ import ShareIcon from '../../assets/icons/share.svg'
 import PaymentIcon from '../../assets/icons/payment.svg'
 import ExpandIcon from '../../assets/icons/expand.svg'
 import BottomNavOptionsList from './BottomNavOptionsList'
+import { connect } from 'react-redux'
+import { setBotNavDisplayState } from '../../stores/actions/botNavAction'
 
 export const ICON_SIZE = SCREEN_WIDTH/6 * 0.6
 const OS_POS_CONFIG = OS === 'ios' ? 20 : 0
@@ -41,9 +43,6 @@ const Tab = (props) => {
 const BottomTabNavBar = (props) => {
     //Tab index: 1-Checkin, 2-Staff, 3-Share, 4-Payment
     const [activeTab, setActiveTab] = useState(1)
-
-    //Nav State: 1-Basic, 2-Expand Min, 3-Expand Max
-    const [navState, setNavState] = useState(1)
 
     const botNavTranslate = useRef(new Animated.Value(0 + OS_POS_CONFIG)).current
     const optionsListContTranslate = useRef(new Animated.Value(600 + OS_POS_CONFIG)).current
@@ -81,20 +80,24 @@ const BottomTabNavBar = (props) => {
     }
 
     const handlePressMainBtn = () => {
-        switch (navState) {
-            case 1: 
+        switch (props.botNavDisplayState) {
+            case 0: 
                 hideBotNav()
-                setNavState(2)
+                props.setBotNavDisplayState(1)
                 return
-            case 2: 
+            case 1: 
                 showBotNav()
-                setNavState(1)
+                props.setBotNavDisplayState(0)
                 return
         }
     }
 
     const handlePressBotNavTab = (tabIndex) => {
         setActiveTab(tabIndex)
+    }
+
+    if (props.botNavDisplayState == 3) {
+        return <></>
     }
 
     return (
@@ -261,4 +264,12 @@ const styles = StyleSheet.create({
     }
 })
 
-export default BottomTabNavBar
+const mapStateToProps = (state) => ({
+    botNavDisplayState: state.botNavReducer.displayState
+})
+
+const mapDispatchToProps = (dispatch) => ({
+    setBotNavDisplayState: displayState => dispatch(setBotNavDisplayState(displayState))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(BottomTabNavBar)

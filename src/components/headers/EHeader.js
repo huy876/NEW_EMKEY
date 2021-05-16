@@ -62,7 +62,7 @@ const styleSheetFactory = props => StyleSheet.create({
     screenTitle: {
         fontSize: OS === 'android' ? 22 : 20,
         fontFamily: FONT.Segoe_UI_Semi_Bold,
-        fontWeight: OS === 'ios' && '600'
+        fontWeight: '600'
     }
 
 })

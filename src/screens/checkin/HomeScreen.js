@@ -21,7 +21,12 @@ const HomeScreen = ({navigation}) => {
     const [queueingState, setQueueingState] = useState(0)
 
     const renderQueueing = () => {
-        return queueingState === 1 && <StandQueuePopup />
+        return queueingState != 0 && (
+            <StandQueuePopup 
+                queueingState={queueingState}
+                setQueueingState={setQueueingState}
+            />
+        )
     }
 
     return (

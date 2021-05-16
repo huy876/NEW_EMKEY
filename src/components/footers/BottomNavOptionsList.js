@@ -21,10 +21,13 @@ import HistoryIcon from '../../assets/icons/options-list/history.svg'
 import BillSplitIcon from '../../assets/icons/options-list/bill-split.svg'
 import StockIcon from '../../assets/icons/options-list/search-stock.svg'
 import FeedBackIcon from '../../assets/icons/options-list/feedback.svg'
+import { connect } from 'react-redux'
+import { setBotNavDisplayState } from '../../stores/actions/botNavAction'
 
 const BottomNavOptionsList = (props) => {
     const handleQueeing = () => {
         props.setQueueingState(1)
+        props.setBotNavDisplayState(3)
     }
 
     return (
@@ -112,4 +115,8 @@ const styles = StyleSheet.create({
     }
 })
 
-export default BottomNavOptionsList
+const mapDispatchToProps = dispatch => ({
+    setBotNavDisplayState: displayState => dispatch(setBotNavDisplayState(displayState))
+})
+
+export default connect(null, mapDispatchToProps)(BottomNavOptionsList)

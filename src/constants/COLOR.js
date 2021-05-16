@@ -3,6 +3,8 @@ export default {
     primaryPink: '#CB0367',
 
     purple1: '#722797',
+    purple2: '#44194B',
+    purple3: '#B620E0',
 
     pink1: '#BC1768',
     pink2: '#CB0268',
@@ -14,10 +16,13 @@ export default {
 
     white: '#FFFFFF',
     blue1: '#4F44FF',
+    blue2: '#3252B6',
 
     grey1: '#CCCCCC',
     grey2: '#F9F9F9',
     grey3: '#E5E5E5',
     grey4: '#707070',
-    grey5: '#999'
+    grey5: '#999',
+
+    green1: '#00EEE0',
 }
